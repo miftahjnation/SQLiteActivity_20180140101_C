@@ -20,7 +20,7 @@ public class DBController extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int i, int i1) {
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("drop table if exists teman");
         onCreate(db);
     }
@@ -37,7 +37,7 @@ public class DBController extends SQLiteOpenHelper {
     public ArrayList<HashMap<String,String>> getAllTeman(){
         ArrayList<HashMap<String,String>> daftarTeman;
         daftarTeman = new ArrayList<>();
-        String selectQuery = "Select * from teman";
+        String selectQuery = "select * from teman";
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
         if(cursor.moveToFirst())
