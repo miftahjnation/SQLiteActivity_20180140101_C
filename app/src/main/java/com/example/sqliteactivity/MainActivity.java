@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
 import com.example.sqliteactivity.adapter.TemanAdapter;
 import com.example.sqliteactivity.database.DBController;
 import com.example.sqliteactivity.database.Teman;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, TemanBaru.class);
                 startActivity(intent);
+
             }
         });
 
@@ -52,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i<daftarTeman.size();i++)
         {
             Teman teman = new Teman();
-
             teman.setId(daftarTeman.get(i).get("id").toString());
             teman.setNama(daftarTeman.get(i).get("nama").toString());
             teman.setTelpon(daftarTeman.get(i).get("telpon").toString());
@@ -60,4 +61,7 @@ public class MainActivity extends AppCompatActivity {
             temanArrayList.add(teman);
         }
     }
+
+
+
 }
