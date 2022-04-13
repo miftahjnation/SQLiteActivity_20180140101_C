@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 public class TemanAdapter extends RecyclerView.Adapter<TemanAdapter.TemanViewHolder> {
     private ArrayList<Teman> listData;
-    Context mContext;
+    private Context mContext;
 
     public TemanAdapter(ArrayList<Teman> listData) {
         this.listData = listData;
