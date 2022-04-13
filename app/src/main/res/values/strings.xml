@@ -2,4 +2,11 @@
     <string name="app_name">SQLiteActivity</string>
     <string name="editdata">Edit Data</string>
     <string name="hapusdata">Hapus Data</string>
+    <string name="tdeletedata">Delete Data</string>
+    <string name="tsimpan">Save</string>
+    <string name="tcancel">Cancel</string>
+    <string name="tnama">Nama</string>
+    <string name="tnotelp">No Telepon</string>
+    <string name="tcreatedata">Create Data</string>
+    <string name="tview">View</string>
 </resources>
